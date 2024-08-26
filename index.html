@@ -19,14 +19,12 @@
             background: #5b0600;
             background: radial-gradient(circle, #5b0600 0%, #300902 100%);
         }
-
         .main {
             height: 100vh;
             background: url('https://megatruck.online/assets/lp.webp') no-repeat;
             background-size: contain;
             background-position: center;
         }
-
         .footer {
             height: 10vh;
             background-color: #2C0902;
@@ -34,8 +32,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-        }
-        
+        }        
         .list-items {
             padding: 0;
             justify-content: center;
@@ -50,11 +47,9 @@
             vertical-align: baseline;
             background: transparent;
         }
-
         .list-items:nth-child(1) {
             margin-bottom: 5px;
         }
-
         .list-item {
             margin-right: 8px;
             margin-left: 8px;
@@ -72,7 +67,6 @@
             vertical-align: baseline;
             background: transparent;
         }
-
         .list-item-icon {
             --icon-margin: 0 calc(19px*0.125);
             --icon-size: 19px;
@@ -85,7 +79,6 @@
             width: var(--icon-size,1em);
             height: var(--icon-size,1em);
         }
-
         .list-item-text {
             color: #fff;
             transition: color 0.3s;
@@ -97,12 +90,14 @@
             line-height: 1.2em;
             margin-right: 10px;
         }
-
+        .service-terms-link {
+            text-decoration: none;
+            color: #fff;
+        }
         @media (max-width: 767px) {
             .main {
                 background-size: cover;
             }
-
             .list-item-icon > .list-item-text {
                 font-size: 16px;
                 line-height: 1.2em;
@@ -141,6 +136,12 @@
                 <li class="list-item">
                     <span class="list-item-icon"><i class="fa-solid fa-truck"></i></span>
                     <span class="list-item-text">oficina@megatruck.online</span>
+                </li>
+                <li class="list-item">
+                    <span class="list-item-icon"><i class="fa-solid fa-truck"></i></span>
+                    <span class="list-item-text">
+                        <a href="./termosdeuso.html" class="service-terms-link">Termos de Uso</a>
+                    </span>
                 </li>
             </ul>
         </div>
